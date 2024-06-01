@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CALCULATOR</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <main class="main">
+        <section class="Calculator">
+            <h1 id="header" style="text-align: center; color: black;">Calculator App</h1>
+            <input id="Screen" type="text" disabled>
+            <div class="Buttons">
+
+                <input 
+                id="btn" 
+                value="☼" 
+                type="button" 
+                onclick="mode()" 
+                style="grid-area: mode-btn; background-color: #9fa6bae9; color:black;"
+                >
+
+                <input 
+                id="btn" 
+                value="+/-" 
+                type="button" 
+                onclick="negation()" 
+                style="grid-area: negation-btn" 
+                >
+
+                <input 
+                id="btn" 
+                value="C" 
+                type="button" 
+                onclick="ClearInput()" 
+                style="grid-area: clear-btn"
+                >
+
+                <input 
+                id="btn" 
+                value="⌫" 
+                type="button" 
+                onclick="erase()" 
+                style="grid-area: erase-btn"
+                >
+
+                <input 
+                id="btn" 
+                value="7" type="button" 
+                onclick="appendNumber(7)" 
+                style="grid-area: num-7"
+                >
+
+                <input 
+                id="btn" 
+                value="8" 
+                type="button" 
+                onclick="appendNumber(8)" 
+                style="grid-area: num-8"
+                >
+
+                <input 
+                id="btn" 
+                value="9" 
+                type="button" 
+                onclick="appendNumber(9)" 
+                style="grid-area: num-9"
+                >
+
+                <input 
+                id="btn" 
+                value="x" 
+                type="button" 
+                onclick="multiply()" 
+                style="grid-area: multiply-btn"
+                >
+
+                <input 
+                id="btn" 
+                value="4" 
+                type="button" 
+                onclick="appendNumber(4)" 
+                style="grid-area: num-4"
+                >
+
+                <input 
+                id="btn" 
+                value="5" 
+                type="button" 
+                onclick="appendNumber(5)" 
+                style="grid-area: num-5"
+                >
+
+                <input 
+                id="btn" 
+                value="6" 
+                type="button" 
+                onclick="appendNumber(6)" 
+                style="grid-area: num-6"
+                >
+
+                <input 
+                id="btn" 
+                value="-" 
+                type="button" 
+                onclick="subtract()"
+                style="grid-area: subract-btn"
+                >
+
+                <input 
+                id="btn" 
+                value="1" 
+                type="button" 
+                onclick="appendNumber(1)" 
+                style="grid-area: num-1"
+                >
+
+                <input 
+                id="btn" 
+                value="2" 
+                type="button" 
+                onclick="appendNumber(2)" 
+                style="grid-area: num-2"
+                >
+
+                <input 
+                id="btn" 
+                value="3" 
+                type="button"
+                onclick="appendNumber(3)" 
+                style="grid-area: num-3"
+                >
+
+                <input 
+                id="btn" 
+                value="+" 
+                type="button" 
+                onclick="add()" 
+                style="grid-area: addition-btn"
+                >
+
+                <input 
+                id="btn" 
+                value="0" 
+                type="button" 
+                onclick="appendNumber(0)" 
+                style="grid-area: num-0"
+                >
+
+                <input 
+                id="btn" 
+                value="." 
+                type="button" 
+                onclick="decimal()" 
+                style="grid-area: decimal-btn"
+                >
+
+                <input 
+                id="btn" 
+                value="÷" 
+                type="button" 
+                onclick="divide()" 
+                style="grid-area: divide-btn"
+                >
+
+                <input 
+                id="btn" 
+                value="=" 
+                type="button" 
+                onclick="equal()" 
+                style="grid-area: equal-btn"
+                >
+
+            </div>
+        </section>
+    </main>
+    <script src="functions.js"></script>
+</body>
+</html>

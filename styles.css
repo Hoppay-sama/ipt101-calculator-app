@@ -1,0 +1,122 @@
+body {
+    background-color: rgb(255, 255, 255);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif; 
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    
+}
+
+.Calculator{
+    background-color: rgb(148, 161, 213);
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    border:0.8rem black;
+
+
+}
+
+#Screen {
+    width: 25rem;
+    height: 7rem;
+    margin:1.05rem;
+    font-size: 36px;
+    padding: 10px;
+    text-align: right;
+    box-sizing: border-box;
+    border: 0.3rem black; 
+    border-style:inset;
+    color: #000000;
+    background-color: #cacaca;
+    border-radius: 10px;    
+}
+
+.Buttons {
+    margin: 0.65rem;
+    display: grid;
+    grid-template-columns: 4;
+    grid-template-rows: 5;
+    grid-template-areas: 
+    "mode-btn negation-btn clear-btn erase-btn "
+    "num-7 num-8 num-9 multiply-btn"
+    "num-4 num-5 num-6 divide-btn "
+    "num-1 num-2 num-3 subract-btn"
+    "decimal-btn num-0 equal-btn addition-btn";
+}
+
+#btn {
+    padding: 1.3rem;
+    margin: 0.2rem;
+    font-size: 17px;
+    border-radius: 0.9rem;
+    background-color: #222327e9;
+    color: white;
+
+}
+
+#btn:hover{
+    color: black;
+    background-color: white;
+}
+
+
+/* Media queries for responsiveness */
+@media only screen and (max-width: 1023px) {
+    .Calculator {
+        padding: 0.4rem;
+        border-radius: 0.3rem;
+        border: 0.5rem black;
+    }
+    #Screen {
+        width: 100%;
+        height: 5rem;
+        margin: 0rem;
+        font-size: 24px;
+        padding: 10px;
+    }
+    .Buttons {
+        margin: 0.1rem;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: auto;
+        grid-template-areas: 
+            "mode-btn negation-btn clear-btn erase-btn"
+            "num-7 num-8 num-9 multiply-btn "
+            "num-4 num-5 num-6 divide-btn "
+            "num-1 num-2 num-3 subract-btn"
+            "decimal-btn num-0 equal-btn addition-btn ";
+    }
+    #btn {
+        padding: 1rem;
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .Calculator {
+        padding: 0.3rem;
+        border-radius: 0.2rem;
+        border: 0.3rem black;
+    }
+    #Screen {
+        height: 4rem;
+        margin: 0.3rem;
+        font-size: 20px;
+        padding: 4px;
+    }
+    .Buttons {
+        margin: 0.3rem;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    #btn {
+        padding: 0.8rem;
+        font-size: 12px;
+    }
+}
